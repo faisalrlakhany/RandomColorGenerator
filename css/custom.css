@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+
+}
+
+body {
+    transition: 1s;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.4s;
+}
+
+.container:hover {
+    background: linear-gradient(135deg, #7b1fc1, #1e66f3);
+    box-shadow: 0 0 25px rgba(106, 17, 203, 0.6);
+    transform: scale(1.05);
+}
+
+button {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    background-color: #ff4d6d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 25px;
+    box-shadow: 0 5px 15px rgba(255, 77, 109, 0.4);
+    transition: 0.5s;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: #ff2a55;
+    box-shadow: 0 0 15px rgba(255, 45, 85, 0.7);
+    transform: scale(1.0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        font-size: 28px;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        font-size: 22px;
+        padding: 12px;
+        border-radius: 8px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
