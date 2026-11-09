@@ -1,6 +1,6 @@
-# ðŸŽ¨ Random Color Generator
+# 🎨 Random Color Generator
 
-A tiny, fun **random color generator** built with **vanilla HTML, CSS, and JavaScript**. Click the button, get a random hex color, watch the whole page transition to it â€” and the hex code is copied to your clipboard automatically.
+A tiny, fun **random color generator** built with **vanilla HTML, CSS, and JavaScript**. Click the button, get a random hex color, watch the whole page transition to it — and the hex code is copied to your clipboard automatically.
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -8,7 +8,7 @@ A tiny, fun **random color generator** built with **vanilla HTML, CSS, and JavaS
 
 ---
 
-## ðŸ“Œ Project Type
+## 📌 Project Type
 
 | | |
 |---|---|
@@ -16,11 +16,11 @@ A tiny, fun **random color generator** built with **vanilla HTML, CSS, and JavaS
 | **Type** | Static single-page app, no routing |
 | **Purpose** | Generate a random hex color and preview it live |
 | **Dependencies** | None |
-| **Build Tools** | None â€” runs directly in the browser |
+| **Build Tools** | None — runs directly in the browser |
 
 ---
 
-## ðŸ›  Tech Stack
+## 🛠 Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -28,27 +28,27 @@ A tiny, fun **random color generator** built with **vanilla HTML, CSS, and JavaS
 | Styling | CSS3 (Flexbox, transitions, gradients, media queries) |
 | Logic | Vanilla JavaScript (ES6+, arrow functions) |
 | API | Browser **Clipboard API** (`navigator.clipboard`) |
-| Fonts | Google Fonts â€” Roboto |
+| Fonts | Google Fonts — Roboto |
 | Hosting | Any static host (GitHub Pages, Netlify, Vercel) |
 
 ---
 
-## âœ¨ Features
+## ✨ Features
 
-- ðŸŽ² **Random hex color** generated on every click
-- ðŸ–Œï¸ **Live page preview** â€” the entire background smoothly transitions to the new color
-- ðŸ“‹ **Auto-copy** â€” hex code is copied to the clipboard instantly
-- ðŸ” Generates a color automatically on page load
-- ðŸŒˆ **Glassmorphism-style card** with gradient, glow, and hover animation
-- ðŸ“± **Fully responsive** â€” tuned for desktop, tablet, and small phones (320px+)
+- 🎲 **Random hex color** generated on every click
+- 🖌️ **Live page preview** — the entire background smoothly transitions to the new color
+- 📋 **Auto-copy** — hex code is copied to the clipboard instantly
+- 🔁 Generates a color automatically on page load
+- 🌈 **Glassmorphism-style card** with gradient, glow, and hover animation
+- 📱 **Fully responsive** — tuned for desktop, tablet, and small phones (320px+)
 
 ---
 
-## âš™ï¸ How It Works
+## ⚙️ How It Works
 
 ```js
-const randomNumber = Math.floor(Math.random() * 16777215); // 0 â€“ 0xFFFFFF
-const randomCode  = "#" + randomNumber.toString(16);       // number â†’ hex
+const randomNumber = Math.floor(Math.random() * 16777215); // 0 – 0xFFFFFF
+const randomCode  = "#" + randomNumber.toString(16);       // number → hex
 body.style.backgroundColor = randomCode;                   // live preview
 navigator.clipboard.writeText(randomCode);                 // auto copy
 ```
@@ -58,24 +58,24 @@ navigator.clipboard.writeText(randomCode);                 // auto copy
 3. The color is applied to the page background and displayed as text.
 4. The hex code is written to the clipboard.
 
-> **Note:** Because `toString(16)` is not zero-padded, very dark colors can occasionally produce a shorter code (e.g. `#abc`). Zero-padding with `.padStart(6, "0")` would make every output a strict 6-digit hex â€” a nice small improvement.
+> **Note:** Because `toString(16)` is not zero-padded, very dark colors can occasionally produce a shorter code (e.g. `#abc`). Zero-padding with `.padStart(6, "0")` would make every output a strict 6-digit hex — a nice small improvement.
 
 ---
 
-## ðŸ“ Project Structure
+## 📁 Project Structure
 
 ```
 RandomColorGenerator/
-â”œâ”€â”€ index.html        # UI markup
-â”œâ”€â”€ css/
-â”‚   â””â”€â”€ custom.css    # Card styling, transitions, responsive rules
-â””â”€â”€ js/
-    â””â”€â”€ app.js        # Random color logic + clipboard copy
+├── index.html        # UI markup
+├── css/
+│   └── custom.css    # Card styling, transitions, responsive rules
+└── js/
+    └── app.js        # Random color logic + clipboard copy
 ```
 
 ---
 
-## ðŸš€ Getting Started
+## 🚀 Getting Started
 
 No installation required.
 
@@ -90,7 +90,7 @@ Then open `index.html` in your browser, or run it with VS Code **Live Server**.
 
 ---
 
-## ðŸ§  Concepts Practiced
+## 🧠 Concepts Practiced
 
 - `Math.random()` and number-to-hex conversion
 - DOM selection and dynamic styling (`element.style`)
@@ -100,7 +100,7 @@ Then open `index.html` in your browser, or run it with VS Code **Live Server**.
 
 ---
 
-## ðŸ‘¨â€ðŸ’» Author
+## 👨‍💻 Author
 
 **Muhammad Faisal Lakhany**
 GitHub: [@faisalrlakhany](https://github.com/faisalrlakhany)
